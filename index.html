@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Portifolio</title>
 </head>
 
@@ -12,17 +13,20 @@
     <main>
         <section id="menu-principal">
             <header>
-                <h2>Jhonatan W Camêlo</h2>
+                <h2 id="titulo-pagina">Jhonatan W Camêlo</h2>
                 <span>jwcamelo@gmail.com</span>
             </header>
+            <div class="div-foto-perfil">
+                <img src="/img/foto-perfil.jpg" alt="" id="foto-perfil">
+            </div>
             <h1>Olá, meu nome é Jhonatan e eu sou um desenvolvedor fullstack em formação.</h1>
             <p>Eu estou cursando o 2º período do curso Tecnólogo em Análise e desenvolvimento de sistemas e atualmente estou participando do projoeto Oracle ONE na Alura.
             </p>
-            <ul>
-                <li><a href="">Github</a></li>
-                <li><a href="">LinkedIn</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Currículo</a></li>
+            <ul id="lista-links">
+                <li><a href="">Github <img class="icone-link" src="/img/icone-link.svg"></a></li>
+                <li><a href="">LinkedIn <img class="icone-link" src="/img/icone-link.svg"></a></li>
+                <li><a href="">Instagram <img class="icone-link" src="/img/icone-link.svg"></a></li>
+                <li><a href="">Currículo <img class="icone-link" src="/img/icone-link.svg"></a></li>
             </ul>
         </section>
         <section id="sobre-mim">
@@ -35,12 +39,30 @@
         </section>
         <section id="skills">
             <h1 class="titulo-section">Skills</h1>
-            <div class="conteudo-section">Html 5</div>
-            <div class="conteudo-section">Javascript</div>
-            <div class="conteudo-section">Node JS</div>
-            <div class="conteudo-section">CSS</div>
-            <div class="conteudo-section">Python</div>
-            <div class="conteudo-section">SQL Server</div>
+            <div class="conteudo-section">
+                <img class="logo-skills" src="/img/icomoon-free_html-five.svg" alt="icone-html5">
+                <label for="">HTML 5</label>
+            </div>
+            <div class="conteudo-section">
+                <img class="logo-skills" src="/img/simple-icons_css3.svg" alt="icone-html5">
+                <label for="">CSS</label>
+            </div>
+            <div class="conteudo-section">
+                <img class="logo-skills" src="/img/akar-icons_javascript-fill.svg" alt="icone-javascript">
+                <label for="">Javascript</label>
+            </div>
+            <div class="conteudo-section">
+                <img class="logo-skills" src="/img/akar-icons_node-fill.svg" alt="icone-html5">
+                <label for="">Node JS</label>
+            </div>
+            <div class="conteudo-section">
+                <img class="logo-skills" src="/img/akar-icons_python-fill.svg" alt="icone-html5">
+                <label for="">Python</label>
+            </div>
+            <div class="conteudo-section">
+                <img class="logo-skills" src="/img/carbon_sql.svg" alt="icone-html5">
+                <label for="">SQL Server</label>
+            </div>
         </section>
         <section id="hobbies">
             <h1 class="titulo-section">Hobbies</h1>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+}
+
+#menu-principal {
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+#foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#lista-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.icone-link {
+    width: 12px;
+}
+
+#sobre-mim {
+    padding: 10px;
+    background-color: #EAF2FD;
+}
+
+.titulo-section {
+    width: 100%;
+}
+
+#skills {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.conteudo-section {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 35%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.logo-skills {
+    width: 30px;
+    margin: 10px 0;
+}
+
+#hobbies {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#formacao-academica {
+    background-color: #EAF2FD;
+}
+
+#contato {
+    background-color: #EAF2FD;
+}
