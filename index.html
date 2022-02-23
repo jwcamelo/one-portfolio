@@ -29,21 +29,23 @@
                 <div class="div-foto-perfil">
                     <img src="/img/foto-perfil.jpg" alt="" id="foto-perfil">
                 </div>
-                <h1>Olá, meu nome é Jhonatan e eu sou um desenvolvedor fullstack em formação.</h1>
-                <p>Eu estou cursando o 2º período do curso Tecnólogo em Análise e desenvolvimento de sistemas e atualmente estou participando do projoeto Oracle ONE na Alura.
-                </p>
-                <ul id="lista-links">
-                    <li><a href="https://github.com/jwcamelo" target="_blank">Github <img class="icone-link" src="/img/icone-link.svg"></a></li>
-                    <li><a href="https://www.linkedin.com/in/jwcamelo/" target="_blank">LinkedIn <img class="icone-link" src="/img/icone-link.svg"></a></li>
-                    <li><a href="https://www.instagram.com/jwcamelo.dev/" target="_blank">Instagram <img class="icone-link" src="/img/icone-link.svg"></a></li>
-                    <li><a href="" target="_blank">Currículo <img class="icone-link" src="/img/icone-link.svg"></a></li>
-                </ul>
+                <div id="resumo">
+                    <h1>Olá, meu nome é Jhonatan e eu sou um desenvolvedor fullstack em formação.</h1>
+                    <p>Eu estou cursando o 2º período do curso Tecnólogo em Análise e desenvolvimento de sistemas e atualmente estou participando do projoeto Oracle ONE na Alura.
+                    </p>
+                    <ul id="lista-links">
+                        <li><a href="https://github.com/jwcamelo" target="_blank">Github <img class="icone-link" src="/img/icone-link.svg"></a></li>
+                        <li><a href="https://www.linkedin.com/in/jwcamelo/" target="_blank">LinkedIn <img class="icone-link" src="/img/icone-link.svg"></a></li>
+                        <li><a href="https://www.instagram.com/jwcamelo.dev/" target="_blank">Instagram <img class="icone-link" src="/img/icone-link.svg"></a></li>
+                        <li><a href="" target="_blank">Currículo <img class="icone-link" src="/img/icone-link.svg"></a></li>
+                    </ul>
+                </div>
             </section>
             <section id="sobre-mim">
                 <h2 class="titulo-section">Sobre mim</h2>
-                <p>Eu tenho 27 anos, nascido e criado na zona norte de Recife - Pernambuco. Sempre gostei de tecnlogia e esse gosto me fez entrar para a UFPE em 2012 aos 17 anos. Devido à problemas pessoais, não consegui concluir o curso e me afastei da
-                    área por 10 anos. Em 2021 decidi que era hora de voltar a me dedicar ao que amo e voltei aos estudos na área de TI. Além do meu gosto pessoal, hoje enxergo a tecnologia como uma forma de democratizar a educação. Uma ferramenta capaz
-                    de mudar a realidade das pessoas.
+                <p>Eu tenho 27 anos, nascido e criado na zona norte de Recife - Pernambuco. Sempre gostei de tecnlogia e esse gosto me fez entrar para a UFPE em 2012 para o curso de Bacharelado em Análise e Desenvolvimento de Sistemas. Devido à problemas
+                    pessoais, não consegui concluir o curso e me afastei da área por 10 anos. Em 2021, em meio à pandemia, decidi voltar <acronym title=""></acronym> me dedicar ao que amo e voltei aos estudos na área de TI. Além do meu gosto pessoal,
+                    hoje enxergo a tecnologia como uma forma de democratizar a educação. Uma ferramenta capaz de mudar a realidade das pessoas.
                 </p>
                 <img src="/img/assinatura.png" alt="assinatura-jwc">
             </section>
@@ -162,17 +164,21 @@
                     <h1 class=" ">Contato</h1>
                     <p>Quer entrar em contato comigo? Preencha o formulário e entrarei em contato o mais rápido possível.
                     </p>
-                    <form action="#" id="form-contato">
-                        <div id="div-input">
+                    <form action="mailto:jwcmade@gmail.com" method="post" id="form-contato">
+                        <div class="div-input">
+                            <input class="input" type="text" name="input-nome" id="input-nome" placeholder="Nome" required>
                             <label for="input-nome">Nome</label>
-                            <input class="input" type="text" name="input-nome" id="input-nome">
+
                         </div>
-                        <div id="div-input">
+                        <div class="div-input">
+                            <input class="input" type="email" name="input-email" id="input-email" placeholder="email" required>
                             <label for="input-email">E-mail</label>
-                            <input class="input" type="text" name="input-email" id="input-email">
+                        </div>
+                        <div class="div-input">
+                            <input class="input" type="text" name="input-assunto" id="input-assunto" placeholder="Assunto">
+                            <label for="input-email">Assunto</label>
                         </div>
                         <div id="div-mensagem">
-                            <input type="text" name="input-assunto" id="input-assunto" placeholder="Assunto">
                             <textarea name="input-mensagem" id="input-mensagem" cols="20" rows="10" placeholder="Mensagem"></textarea>
                             <input id="btn-enviar-mensagem" type="submit" value="Enviar mensagem">
                         </div>
@@ -180,7 +186,7 @@
                 </div>
             </section>
         </main>
-        <footer>Desenvolvido por jwcamelo</footer>
+        <footer><a href="https://github.com/jwcamelo">Desenvolvido por jwcamelo</a></footer>
     </div>
 
 </body>

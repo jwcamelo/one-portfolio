@@ -213,20 +213,40 @@ section {
     width: 100%;
 }
 
-#div-input {
+.div-input {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 1px solid #2A7AE4;
     margin-bottom: 10px;
-    padding: 5px;
     box-sizing: border-box;
     background-color: #fff;
+    position: relative;
+    height: 50px;
+    justify-content: center;
+}
+
+.div-input>input::placeholder {
+    color: transparent;
+}
+
+.div-input>label {
+    position: absolute;
+    top: 25;
+    left: 5px;
+    color: #2A7AE4;
+    font-size: 20px;
+    transition: top 400ms, left 400ms, font 400ms;
+}
+
+.div-input>input:focus+label,
+.div-input>input:not(:placeholder-shown)+label {
+    top: 0;
+    font-size: 12px;
 }
 
 .input {
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     outline: none;
 }
 
@@ -236,19 +256,13 @@ section {
     width: 100%;
 }
 
-#input-assunto {
-    height: 30px;
-    margin-bottom: 5px;
-    border: 1px solid #2A7AE4;
-    font-size: 15px;
-    padding: 5px;
-    outline: none;
-}
-
 textarea {
     border: 1px solid #2A7AE4;
     margin-bottom: 10px;
     padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    outline: none;
 }
 
 #btn-enviar-mensagem {
@@ -288,6 +302,23 @@ footer {
     .conteudo-formacao {
         width: 40%;
     }
+    header {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #menu-principal {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .div-foto-perfil {
+        display: inline;
+    }
+    #resumo {
+        width: 72%;
+        text-align: left;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -298,11 +329,15 @@ footer {
     #formacao-academica,
     #experiencia-profissional,
     #contato {
-        padding: 10px 50px;
+        padding: 10px 100px;
     }
     #skills,
     #hobbies {
         justify-content: space-between;
+    }
+    #foto-perfil {
+        width: 250px;
+        height: 250px;
     }
     .conteudo-section {
         width: 10%;
