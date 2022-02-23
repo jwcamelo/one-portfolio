@@ -2,9 +2,14 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+}
+
+.container-pai {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     background-color: #F5F5F5;
     font-family: 'Roboto', sans-serif;
 }
@@ -20,10 +25,27 @@ header {
     font-weight: bolder;
 }
 
+#ctn-lateral-header {
+    display: flex;
+    align-items: center;
+}
+
+#nav {
+    text-decoration: none;
+    list-style: none;
+    display: none;
+}
+
 #foto-perfil {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
 }
 
 #lista-links {
@@ -38,6 +60,10 @@ header {
     width: 12px;
 }
 
+section {
+    margin-bottom: 30px;
+}
+
 #sobre-mim {
     padding: 10px;
     background-color: #EAF2FD;
@@ -45,6 +71,8 @@ header {
 
 .titulo-section {
     width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 #skills {
@@ -52,6 +80,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
 
 .conteudo-section {
@@ -79,8 +108,246 @@ header {
 
 #formacao-academica {
     background-color: #EAF2FD;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.conteudo-formacao {
+    width: 90%;
+    margin: 10px 0;
+}
+
+.div-img-formacao {
+    margin: auto;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 118px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-formacao {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-formacao {
+    max-width: 170px;
+}
+
+.titulo-formacao {
+    margin: 5px 0;
+}
+
+.conteudo-experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.imagem-projeto {
+    width: 90%;
+}
+
+.menu-projeto {
+    text-align: center;
+}
+
+.titulo-projeto {
+    margin: 0;
+}
+
+.subtitulo-projeto {
+    margin-bottom: 10px;
+}
+
+.btn-repositorio {
+    width: 108px;
+    height: 40px;
+    background-color: transparent;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    cursor: pointer;
+}
+
+.btn-repositorio:hover {
+    background-color: #D4E4FA;
+    transition: 300ms;
+}
+
+.btn-demo {
+    width: 96px;
+    height: 40px;
+    background-color: #2A7AE4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0px 20px 10px;
+}
+
+.btn-demo:hover {
+    background-color: #5595E9;
+    transition: 300ms;
 }
 
 #contato {
     background-color: #EAF2FD;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#div-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #2A7AE4;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.input {
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+
+#div-mensagem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#input-assunto {
+    height: 30px;
+    margin-bottom: 5px;
+    border: 1px solid #2A7AE4;
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+}
+
+textarea {
+    border: 1px solid #2A7AE4;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#btn-enviar-mensagem {
+    width: 35%;
+    height: 40px;
+    background-color: #2A7AE4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#btn-enviar-mensagem:hover {
+    background-color: #5595E9;
+    transition: 300ms;
+}
+
+#img-contato {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+@media (min-width: 750px) {
+    .conteudo-section {
+        width: 25%;
+    }
+    .container-formacao {
+        justify-content: space-around;
+    }
+    .conteudo-formacao {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #sobre-mim,
+    #menu-principal,
+    #skills,
+    #hobbies,
+    #formacao-academica,
+    #experiencia-profissional,
+    #contato {
+        padding: 10px 50px;
+    }
+    #skills,
+    #hobbies {
+        justify-content: space-between;
+    }
+    .conteudo-section {
+        width: 10%;
+    }
+    .container-formacao {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .conteudo-experiencia {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+    .imagem-projeto {
+        width: 720px;
+    }
+    .menu-projeto {
+        padding: 30px;
+        text-align: left;
+    }
+    .reverso {
+        flex-direction: row-reverse;
+    }
+    #contato {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #conteudo-contato {
+        width: 100%;
+    }
+    #img-contato {
+        display: inline;
+        width: 300px;
+        height: 480px;
+        margin-right: 25px;
+    }
+    #nav {
+        display: flex;
+    }
+    #nav li {
+        margin-right: 20px;
+    }
+    .imagem-projeto {
+        box-shadow: 7px 5px 5px #4e5053;
+    }
 }
