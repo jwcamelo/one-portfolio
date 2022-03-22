@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.container-pai {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+}
+
+#menu-principal {
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+
+#ctn-lateral-header {
+  display: flex;
+  align-items: center;
+}
+
+#nav {
+  text-decoration: none;
+  list-style: none;
+  display: none;
+}
+
+#foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: #0c6ff0;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+#lista-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.icone-link {
+  width: 12px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+#sobre-mim {
+  padding: 10px;
+  background-color: #eaf2fd;
+}
+
+.titulo-section {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#skills {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.conteudo-section {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 35%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.conteudo-section:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.logo-skills {
+  width: 30px;
+  margin: 10px 0;
+}
+
+#hobbies {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#formacao-academica {
+  background-color: #eaf2fd;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.conteudo-formacao {
+  width: 90%;
+  margin: 10px 0;
+}
+
+.conteudo-formacao:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.div-img-formacao {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 118px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-formacao {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.div-img-formacao {
+  height: 200px;
+}
+
+.img-formacao {
+  max-width: 170px;
+}
+
+.titulo-formacao {
+  margin: 5px 0;
+}
+
+.conteudo-experiencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.imagem-projeto {
+  width: 90%;
+}
+
+.menu-projeto {
+  text-align: center;
+}
+
+.titulo-projeto {
+  margin: 0;
+}
+
+.subtitulo-projeto {
+  margin-bottom: 10px;
+}
+
+.btn-repositorio {
+  width: 108px;
+  height: 40px;
+  background-color: transparent;
+  color: #2a7ae4;
+  border: 1px solid #2a7ae4;
+  cursor: pointer;
+}
+
+.btn-repositorio:hover {
+  background-color: #d4e4fa;
+  transition: 300ms;
+}
+
+.btn-demo {
+  width: 96px;
+  height: 40px;
+  background-color: #2a7ae4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0px 20px 10px;
+}
+
+.btn-demo:hover {
+  background-color: #5595e9;
+  transition: 300ms;
+}
+
+#contato {
+  background-color: #eaf2fd;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+#form-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.div-input {
+  width: 100%;
+  position: relative;
+  padding: 2px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-bottom: 3px solid #ddd;
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  border: nome;
+  height: 40px;
+  margin-top: 10px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+
+#contato input::placeholder {
+  color: transparent;
+}
+
+#contato input:not(:placeholder-shown) + label {
+  font-size: 12px;
+  top: 0px;
+  color: #0c6ff0;
+}
+
+#contato input:focus + label {
+  font-size: 13px;
+  top: 0px;
+  color: #0c6ff0;
+}
+
+#contato label {
+  position: absolute;
+  top: 18px;
+  left: 5px;
+  transition: 0.3s;
+}
+
+#contato span {
+  width: 100%;
+  text-align: left;
+}
+
+#div-mensagem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.erro-form {
+  visibility: hidden;
+  color: rgba(241, 85, 85, 0.89);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+textarea {
+  border: 1px solid #2a7ae4;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  outline: none;
+}
+
+#btn-enviar-mensagem {
+  width: 35%;
+  height: 40px;
+  background-color: #2a7ae4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+#btn-enviar-mensagem:hover {
+  background-color: #5595e9;
+  transition: 300ms;
+}
+
+#img-contato {
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.errorInput {
+  border-bottom: 3px solid rgba(241, 85, 85, 0.89) !important;
+}
+
+@media (min-width: 750px) {
+  .conteudo-section {
+    width: 25%;
+  }
+  .container-formacao {
+    justify-content: space-around;
+  }
+  .conteudo-formacao {
+    width: 40%;
+  }
+  header {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #menu-principal {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .div-foto-perfil {
+    display: inline;
+  }
+  #resumo {
+    width: 72%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  #sobre-mim,
+  #menu-principal,
+  #skills,
+  #hobbies,
+  #formacao-academica,
+  #experiencia-profissional,
+  #contato {
+    padding: 10px 100px;
+  }
+  #skills,
+  #hobbies {
+    justify-content: space-between;
+  }
+  #foto-perfil {
+    width: 250px;
+    height: 250px;
+  }
+  .conteudo-section {
+    width: 10%;
+  }
+  .container-formacao {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .conteudo-experiencia {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+  .imagem-projeto {
+    width: 720px;
+  }
+  .menu-projeto {
+    padding: 30px;
+    text-align: left;
+  }
+  .reverso {
+    flex-direction: row-reverse;
+  }
+  #contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #conteudo-contato {
+    width: 100%;
+  }
+  #img-contato {
+    display: inline;
+    width: 300px;
+    height: 455px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+  }
+  #nav {
+    display: flex;
+  }
+  #nav li {
+    margin-right: 20px;
+  }
+  .imagem-projeto {
+    box-shadow: 7px 5px 5px #4e5053;
+  }
+}

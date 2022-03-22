@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfólio</title>
 </head>
 
@@ -113,8 +113,8 @@
                         <h4 class="titulo-formacao ">Análise e Desenvolvimento de Sistemas</h4>
                         <span class="subtitulo-formacao ">2024 - Faculdade Nova Roma</span>
                     </div>
-                    <div class="conteudo-formacao ">
-                        <div class="div-img-formacao ">
+                    <div class="conteudo-formacao">
+                        <div class="div-img-formacao">
                             <a href="https://www.alura.com.br/" target="_blank"><img class="img-formacao " " src="img/alura.png " alt="img-alura "></a>
                         </div>
                         <h4 class="titulo-formacao">Oracle Next Education Full Stack</h4>
@@ -159,36 +159,43 @@
                 </div>
             </section>
             <section id="contato">
-                <img id="img-contato" src="img/contato.jpeg" alt="">
+                <div id="div-img-contato">
+                    <img id="img-contato" src="img/contato.jpeg" alt="imagem de um telefone simbolizando o campo de contato">
+                </div>
+                
                 <div id="conteudo-contato">
                     <h1 class=" ">Contato</h1>
                     <p>Quer entrar em contato comigo? Preencha o formulário e entrarei em contato o mais rápido possível.
                     </p>
-                    <form action="mailto:jwcmade@gmail.com" method="post" id="form-contato">
-                        <div class="div-input">
-                            <input class="input" type="text" name="input-nome" id="input-nome" placeholder="Nome" required>
-                            <label for="input-nome">Nome</label>
 
+                    <form target="_blank" id="form-contato" action="https://formsubmit.co/jwcmade@gmail.com" autocomplete="off" method="post">
+                        <span class="erro-form" id="erro-nome">erro nome</span>
+                        <div class="div-input" id="div-nome">
+                            <input type="text" name="input-nome" id="input-nome" placeholder="Nome" required>
+                            <label id="label-nome" for="input-nome">Nome</label>
                         </div>
-                        <div class="div-input">
-                            <input class="input" type="email" name="input-email" id="input-email" placeholder="email" required>
-                            <label for="input-email">E-mail</label>
+                        <span class="erro-form" id="erro-email">erro email</span>
+                        <div class="div-input" id="div-email">
+                            <input type="email" name="input-email" id="input-email" placeholder="E-mail" required>
+                            <label id="label-email" for="input-email">E-mail</label>
                         </div>
-                        <div class="div-input">
-                            <input class="input" type="text" name="input-assunto" id="input-assunto" placeholder="Assunto">
-                            <label for="input-email">Assunto</label>
+                        <span class="erro-form" id="erro-assunto">erro assunto</span>
+                        <div class="div-input" id="div-assunto">
+                            <input type="text" name="input-assunto" id="input-assunto" placeholder="Assunto" required>
+                            <label id="labelAssunto" for="input-email">Assunto</label>
                         </div>
                         <div id="div-mensagem">
-                            <textarea name="input-mensagem" id="input-mensagem" cols="20" rows="10" placeholder="Mensagem"></textarea>
-                            <input id="btn-enviar-mensagem" type="submit" value="Enviar mensagem">
+                            <textarea name="input-mensagem" id="input-mensagem" cols="20" rows="5" placeholder="Mensagem" required></textarea>
+                            <input id="btn-enviar-mensagem" type="submit" value="Enviar">
                         </div>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
                     </form>
                 </div>
             </section>
         </main>
         <footer><a href="https://github.com/jwcamelo">Desenvolvido por jwcamelo</a></footer>
     </div>
-
+<script src="js/form.js"></script>
 </body>
 
 </html>

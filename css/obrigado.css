@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f5f7ab;
+  font-family: "Roboto", sans-serif;
+}
+
+#box {
+  background-color: #dfe7e9;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 2px 1px 1px rgba(0, 0, 0, 0.349);
+  margin: 100px auto;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+span {
+  font-size: 18px;
+}
