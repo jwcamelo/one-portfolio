@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -110,11 +111,6 @@ section {
   justify-content: end;
 }
 
-.conteudo-section:hover {
-  transform: scale(1.2);
-  transition: 0.3s;
-}
-
 .logo-skills {
   width: 30px;
   margin: 10px 0;
@@ -140,10 +136,6 @@ section {
   margin: 10px 0;
 }
 
-.conteudo-formacao:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
 
 .div-img-formacao {
   margin: auto;
@@ -269,13 +261,13 @@ input {
   color: transparent;
 }
 
-#contato input:not(:placeholder-shown) + label {
+#contato input:not(:placeholder-shown)+label {
   font-size: 12px;
   top: 0px;
   color: #0c6ff0;
 }
 
-#contato input:focus + label {
+#contato input:focus+label {
   font-size: 13px;
   top: 0px;
   color: #0c6ff0;
@@ -351,25 +343,31 @@ footer {
   .conteudo-section {
     width: 25%;
   }
+
   .container-formacao {
     justify-content: space-around;
   }
+
   .conteudo-formacao {
     width: 40%;
   }
+
   header {
     width: 100%;
     margin-bottom: 25px;
   }
+
   #menu-principal {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .div-foto-perfil {
     display: inline;
   }
+
   #resumo {
     width: 72%;
     text-align: left;
@@ -377,6 +375,7 @@ footer {
 }
 
 @media (min-width: 1024px) {
+
   #sobre-mim,
   #menu-principal,
   #skills,
@@ -386,45 +385,56 @@ footer {
   #contato {
     padding: 10px 100px;
   }
+
   #skills,
   #hobbies {
     justify-content: space-between;
   }
+
   #foto-perfil {
     width: 250px;
     height: 250px;
   }
+
   .conteudo-section {
     width: 10%;
   }
+
   .container-formacao {
     width: 100%;
     justify-content: space-between;
   }
+
   .conteudo-experiencia {
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
   }
+
   .imagem-projeto {
     width: 720px;
   }
+
   .menu-projeto {
     padding: 30px;
     text-align: left;
   }
+
   .reverso {
     flex-direction: row-reverse;
   }
+
   #contato {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+
   #conteudo-contato {
     width: 100%;
   }
+
   #img-contato {
     display: inline;
     width: 300px;
@@ -432,12 +442,15 @@ footer {
     margin-right: 25px;
     margin-bottom: 15px;
   }
+
   #nav {
     display: flex;
   }
+
   #nav li {
     margin-right: 20px;
   }
+
   .imagem-projeto {
     box-shadow: 7px 5px 5px #4e5053;
   }
